@@ -1,0 +1,138 @@
+h1{
+	background: red;
+}
+.wrapper{
+	background:grey;
+	width:728px;
+	height:auto;
+	margin:0 auto;
+
+	 }
+
+.class{
+	background:yellow;
+
+}
+#firstname{
+	background: blue;
+
+}
+#firstname2{
+	background: green;
+
+}
+.all *{
+	background: orange;
+
+}
+.elementselector p{
+	background: red;
+
+
+}
+.elementselector ul{
+	background: green;
+	font: 34px "Arial";
+}
+.attribute a[target]{
+	background: yellow;
+
+}
+
+.specifictarget a[target=value]{
+	background: #088A85;
+	
+
+}
+.active a:active{
+	background: green;
+
+}
+.after p::after{
+	content: "Hello,this is a test";
+	background: yellow;
+}
+.after p::before{
+	content: "This goes before";
+	background: red;
+}
+.input input:checked{
+	height: 50px;
+	width: 50px;
+}
+
+.disabled input[type=text]:enabled {
+    background: #ffff00;
+}
+
+.disabled input[type=text]:disabled {
+    background: #dddddd;
+}
+.empty p:empty{
+
+	background: blue;
+	width: 40px;
+	height: 40px;
+}
+.firstchild p:first-child {
+    background-color: yellow;
+}
+.firstletter p::first-letter {
+    font-size: 300%;
+    color: #8A2BE2;
+}
+.firstline p::first-line {
+    background-color: yellow;
+}
+.firstoftype p:first-of-type {
+    background: #ff0000;
+}
+.focus input:focus {
+    background-color: yellow;
+}
+.hover a:hover {
+    background-color: yellow;
+}
+.inrange input:in-range {
+    border: 2px solid yellow;
+}
+.invalid input:invalid {
+    border: 8px solid red;
+}
+.lastchild p:last-child {
+    background: #ff0000;
+}
+.link a:link {
+    background-color: yellow;
+}
+.not :not(p) {
+    color: #ff0000;
+    }
+.onlyoftype p:only-of-type {
+    background: #ff0000;
+}
+.onlychild p:only-child {
+    background: #ff0000;
+}
+.optional input:optional {
+    background-color: yellow;
+}
+.readonly input:read-only {
+    background-color: yellow;
+}
+.required input:required {
+    background-color: yellow;
+}
+.selection ::selection {
+    color: red;
+    background: yellow;
+}
+.target :target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+.valid input:valid {
+    background-color: yellow;
+}
+.visited a:visited {
+    color: pink;

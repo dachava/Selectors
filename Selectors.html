@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+		<h1>.class Selector</h1>
+		<div class="class">
+			<p>This is a ".class" selector.</p>
+			<p>This highlights text.</p>
+		</div>
+		<p>This is not highlighted, because its outside  of the div class.</p>
+		<p></p>
+		<h1>#id Selector</h1>
+		<div class="numeric">
+			<p>The numeric symbol represents an ID</p>
+			<p id="firstname"> The id selectors selects the elemnts with the matching id.</p>
+			<p id="lastname">This uses other id that is not defined, so it won't show any styles</p>
+			<p id="firstname2">This uses other id with other properties</p>
+		</div>
+		<h1>* Selector</h1>
+		<div class="all">
+			<p>This selector selects all of the elements and apply all of the properties.</p>
+			<p>The symbol of this selector is *</p>
+			<p>It can also select all of the div and apply the properties</p>
+			<p>We can combine a class selector with this selector for example, to select everything on an specific div class.</p>
+		</div>
+		<h1>Element Selector</h1>
+		<div class="elementselector">
+			<p>Applies the properties to an specific element, for example, a p or an ul element. Can be combined with a class selector to apply changes inside the elements of a class,for example, this p element</p>
+			<ul>This ul element can be modified too
+			<li>Example 1</li>
+			<li>Example 2</li>
+			<li>Example 3</li>
+		</ul>
+		</div>
+<ul>
+This ul is outside of the class, so no changes will be applied, but they can be applied to the ul element only. This will select all of the ul elements and apply the modifications.
+<li>Not modified</li>
+<li>Example</li>
+<li>No</li>
+</ul>
+
+	<div class="attribute">
+		<p>The elements with any  target attribute receive modifications</p>
+		<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+		<p>This link has a target attribute, makes the color change.</p>
+		<a href="http://google.com">google.com</a>
+		<p>this element doesn't have atarget attribute, so this element isn't changed.</p>
+	</div>
+	<div class="specifictarget">
+		<p>If the target has a value, it will modify the elements with that target value.
+		</p>
+		<a href="http://google.com" target="value">google.com</a>
+		<a href="http://facebook.com" target="no">facebook.com</a>
+		<p>Also works using a title instead of a value. For example,[title~=flower]selects the item that contains the word flower on the title.</p>
+	</div>
+	<h1>Active Element</h1>
+	<div class="active"> 
+		<a href="http://www.w3schools.com">w3schools.com</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+<p><b>Note:</b> The :active selector styles the active link.</p>
+
+	</div>
+ <h1>::Before and ::After Element</h1>
+	<div class="after">
+		<p>Insert some text before and  after the content of each p element, like this one. For example, add a text that says, hello, this is a test, after this p element. It will also change its color, because I modified the property.</p>
+	</div>
+
+	<div class="input">
+		<h1>:checked Selector</h1>
+<p>This selector changes the way radio items and checkboxes look when they value is checked</p>
+		<form action="">
+ 	 		<input type="radio" checked="checked" value="male" name="gender"> Male<br>
+ 	 		<input type="radio" value="female" name="gender"> Female<br>
+  			<input type="checkbox" checked="checked" value="Bike"> I have a Bike<br>
+ 	 		<input type="checkbox" value="Car"> I have a car 
+		</form>
+	</div>
+
+	<div class="disabled">
+		<h1>:disabled and :enabled Selector</h1>
+		<p>Set a background color for all disabled input elements of type="text". Can also be used on enabled elements.</p>
+		<form action="">
+		First name: <input type="text" value="Diego"><br>
+		Last name: <input type="text" value="Chavarria"><br>
+		Country: <input type="text" disabled="disabled" value="Desamparados">
+		</form>
+
+	</div>
+
+	<div class="empty">
+		<h1>:empty Selector</h1>
+		<p>Selects empty elements and applies properies, in this example, will change the back color of an empty p element, as well as the height and width..</p>
+		<p></p>
+		<p>Above is the empty element.</p>
+	</div>
+
+<h1>First Child Selector</h1>
+
+	<div class="firstchild">
+		<p>This element is highlighted because its the first child element of this parent, in this case, the div.</p>
+		<p>This one is the second child, so its not highlighted.</p>
+	</div>
+
+	<h1>::first-letter Selector</h1>
+
+	<div class="firstletter">
+
+<p>In this case, it will grab the first letter of the p elements, and change the properties of it.</p>
+<p>See?</p>
+	</div>
+<h1>::first-line Selector</h1>
+	<div class="firstline">
+		<p>This will select the first line of any p element. And it will apply properties.</p>
+		<h2>The Attitude Era</h2>
+		<p>The Attitude Era was a period in the World Wrestling Federation according to WWE, began some time in the later half of the 1990s.The era was marked by a shift to more adult-oriented programming content.</p>
+		<p>The era saw several wrestlers rise to stardom, including Stone Cold Steve Austin, The Rock, Mankind, Triple H, Kurt Angle, and Kane; established star The Undertaker continued his main event prominence, as did fellow veterans Shawn Michaels, Bret Hart, Vader, Sycho Sid and Ron Simmons in the early stages of the era.</p>
+	</div>
+<h1>first-of-type Selector</h1>
+	<div class="firstoftype">
+		<h2>This is a heading</h2>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+	</div>
+	<h1>:focus Selector</h1>
+
+	<div class="focus">
+
+		<p>Select and style an input field when it gets focus:</p>
+
+		<p>Click inside the text fields to see a yellow background:</p>
+
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+	</div>
+<h1>:hover Selector</h1>
+	<div class="hover">
+		<p>When mouse hovers over a link, the link will change color.
+		</p>
+		<a href="http://www.w3schools.com">w3schools.com</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+	</div>
+<h1>:in-range Selector</h1>
+	<div class="inrange">
+		<h3>A demonstration of the :in-range selector.</h3>
+
+<input type="number" min="5" max="10" value="7">
+
+<p>Try typing a number out of range (less than 5 or higher than 10), to see the styling disappear.</p>
+	</div>
+<h1>:invalid Selector</h1>
+
+	<div class="invalid">
+		<h3>A demonstration of the :invalid selector.</h3>
+
+<input type="email" value="supportEmail">
+
+<p>Try typing a legal e-mail address, to see the styling disappear.</p>
+	</div>
+<h1>:last-child Selector</h1>
+	<div class="lastchild">
+		<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+	</div>
+
+<h1>:link Selector</h1>
+	<div class="link">
+		<a href="http://www.w3schools.com">W3Sschools</a>
+<a href="http://www.wikipedia.org">Wikipedia</a>
+
+<p><b>Note:</b> The :link selector style links to pages you have not visited yet.</p>
+
+	</div>
+<h1>:not Selector</h1>
+	<div class="not">
+		<p>Selects elements that are not p, or any other specified</p>
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<div>This is some text in a div element.</div>
+
+<a href="http://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+
+
+	</div>
+
+<h1>Only of type Selector</h1>
+	<div class="onlyoftype">
+		<p>Specify a background color for every p element that is the only child of its type, of its parent:</p>
+		<div><p>This is a paragraph.</p></div>
+
+<div><p>This is a paragraph.</p><p>This is a paragraph.</p></div>
+	</div>
+<h1>O0nly child selector</h1>
+	<div class="onlychild">
+<div><p>This is a paragraph.</p></div>
+
+<div><span>This is a span.</span><p>This is a paragraph.</p></div>
+
+	</div>
+<h1>optional Selector</h1>
+	<div class="optional">
+		<h3>A demonstration of the :optional selector.</h3>
+
+<p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+
+<p>The :optional selector selects form elements with no "required" attribute.</p>
+	</div>
+<h1>read-only Selector</h1>
+	<div class="readonly">
+		<h3>A demonstration of the :read-only selector.</h3>
+
+<p>A normal input element:<br><input value="hello"></p>
+
+<p>A readonly input element:<br><input readonly value="hello"></p>
+
+<p>The :read-only selector selects form elements with a "readonly" attribute.</p>
+
+	</div>
+<h1>Required Selector</h1>
+	<div class="required">
+		<h3>A demonstration of the :required selector.</h3>
+
+<p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+
+<p>The :required selector selects form elements with a "required" attribute.</p>
+	</div>
+<h1>Selection Selector</h1>
+
+	<div class="selection">
+		<h2>Select some text on this page:</h2>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+	</div>
+<h1>Target Selector</h1>
+	<div class="target">
+		<h2>This is a heading</h2>
+
+<p><a href="#news1">Jump to New content 1</a></p>
+<p><a href="#news2">Jump to New content 2</a></p>
+
+<p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+<p id="news1"><b>New content 1...</b></p>
+<p id="news2"><b>New content 2...</b></p>
+	</div>
+<h1>valid Selector</h1>
+	<div class="valid">
+<h3>A demonstration of the :valid selector.</h3>
+
+<input type="email" value="support@exampel.com">
+
+<p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+	</div>
+<h1>Visited Selector</h1>
+
+	<div class="visited">
+		<a href="http://www.w3schools.com">W3Sschools Home</a><br>
+<a href="http://www.w3schools.com/html/">W3Schools HTML Tutorial</a><br>
+<a href="http://www.w3schools.com/css/">W3Schools CSS Tutorial</a>
+	</div>
+
+
+
+</div>
+
+	</body>
+</html>
